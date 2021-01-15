@@ -1,0 +1,18 @@
+----Admin table
+Get api/bakery/admin      
+Get api/bakery/admin/{id}    //To get the details of admin
+Put api/bakery/admin/{id}  //To update admin details
+Post api/bakery/admin        //Add a new admin
+Delete api/bakery/admin/{id} //delete admin
+----Delicacy Table
+Get api/bakery/delicacy      
+Get api/bakery/delicacy/{id}    //To get the details of delicacy
+Put api/bakery/delicacy/{id}  //To update delicacy details
+Post api/bakery/delicacy        //Add a new delicacy
+Delete api/bakery/delicacy/{id} //delete delicacy
+---delicacy_schedule Table
+Get api/bakery/delicacy_schedule      
+Get api/bakery/delicacy_schedule/{id}    //To get the details of delicacy_schedule
+Put api/bakery/delicacy_schedule/{id}  //To update delicacy_schedule details
+Post api/bakery/delicacy_schedule        //Add a new delicacy_schedule
+Delete api/bakery/delicacy_schedule/{id} //delete delicacy_schedule
