@@ -10,3 +10,15 @@ C:\Users\usern\source\repos\Userservices\obj\Debug\netcoreapp3.1\Userservices.cs
 C:\Users\usern\source\repos\Userservices\obj\Debug\netcoreapp3.1\Userservices.csproj.CopyComplete
 C:\Users\usern\source\repos\Userservices\obj\Debug\netcoreapp3.1\Userservices.dll
 C:\Users\usern\source\repos\Userservices\obj\Debug\netcoreapp3.1\Userservices.pdb
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\bin\Debug\netcoreapp3.1\Userservices.deps.json
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\bin\Debug\netcoreapp3.1\Userservices.dll
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\bin\Debug\netcoreapp3.1\Userservices.pdb
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\bin\Debug\netcoreapp3.1\Dataservices.dll
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\bin\Debug\netcoreapp3.1\Dataservices.pdb
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\netcoreapp3.1\Userservices.csprojAssemblyReference.cache
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\netcoreapp3.1\Userservices.AssemblyInfoInputs.cache
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\netcoreapp3.1\Userservices.AssemblyInfo.cs
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\netcoreapp3.1\Userservices.csproj.CoreCompileInputs.cache
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\netcoreapp3.1\Userservices.csproj.CopyComplete
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\netcoreapp3.1\Userservices.dll
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\netcoreapp3.1\Userservices.pdb

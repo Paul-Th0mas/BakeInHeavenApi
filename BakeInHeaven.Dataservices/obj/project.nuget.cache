@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SR0rH8qLWg6ktke1X0lQv3N9Rs8GwJT3yAB23FQUbb/2jAQD4Wa004ap/8cVubcjjD7KnhAna6W4EnwL2K8pQA==",
+  "dgSpecHash": "cxvqycXcBQymR2KF1ici6VknpWm+24ucUTxe7K8OvOaYqpDzbxYvySLzsH6y0IIW2ynL62HFzt0j3Uzj8mlObQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\Dataservices.csproj",
+  "projectFilePath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usern\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\usern\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",

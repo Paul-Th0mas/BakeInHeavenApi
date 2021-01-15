@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usern\\source\\repos\\BakeInHeaven\\BakeInHeaven.csproj": {}
+    "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven\\BakeInHeaven.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
+    "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\Dataservices.csproj",
+        "projectUniqueName": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj",
         "projectName": "Dataservices",
-        "projectPath": "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\Dataservices.csproj",
+        "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj",
         "packagesPath": "C:\\Users\\usern\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\obj\\",
+        "outputPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\usern\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Users\\usern\\source\\repos\\BakeInHeaven\\BakeInHeaven.csproj": {
+    "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven\\BakeInHeaven.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usern\\source\\repos\\BakeInHeaven\\BakeInHeaven.csproj",
+        "projectUniqueName": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven\\BakeInHeaven.csproj",
         "projectName": "BakeInHeaven",
-        "projectPath": "C:\\Users\\usern\\source\\repos\\BakeInHeaven\\BakeInHeaven.csproj",
+        "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven\\BakeInHeaven.csproj",
         "packagesPath": "C:\\Users\\usern\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usern\\source\\repos\\BakeInHeaven\\obj\\",
+        "outputPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\usern\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -106,11 +106,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
-                "projectPath": "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\Dataservices.csproj"
+              "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
+                "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj"
               },
-              "C:\\Users\\usern\\source\\repos\\Userservices\\Userservices.csproj": {
-                "projectPath": "C:\\Users\\usern\\source\\repos\\Userservices\\Userservices.csproj"
+              "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\Userservices\\Userservices.csproj": {
+                "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\Userservices\\Userservices.csproj"
               }
             }
           }
@@ -194,14 +194,14 @@
         }
       }
     },
-    "C:\\Users\\usern\\source\\repos\\Userservices\\Userservices.csproj": {
+    "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\Userservices\\Userservices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usern\\source\\repos\\Userservices\\Userservices.csproj",
+        "projectUniqueName": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\Userservices\\Userservices.csproj",
         "projectName": "Userservices",
-        "projectPath": "C:\\Users\\usern\\source\\repos\\Userservices\\Userservices.csproj",
+        "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\Userservices\\Userservices.csproj",
         "packagesPath": "C:\\Users\\usern\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usern\\source\\repos\\Userservices\\obj\\",
+        "outputPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\Userservices\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\usern\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -218,8 +218,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
-                "projectPath": "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\Dataservices.csproj"
+              "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
+                "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj"
               }
             }
           }

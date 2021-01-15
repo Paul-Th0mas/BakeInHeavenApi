@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\Dataservices.csproj": {}
+    "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
+    "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\Dataservices.csproj",
+        "projectUniqueName": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj",
         "projectName": "Dataservices",
-        "projectPath": "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\Dataservices.csproj",
+        "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj",
         "packagesPath": "C:\\Users\\usern\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usern\\source\\repos\\BakeInHeaven.Dataservices\\obj\\",
+        "outputPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\usern\\AppData\\Roaming\\NuGet\\NuGet.Config",

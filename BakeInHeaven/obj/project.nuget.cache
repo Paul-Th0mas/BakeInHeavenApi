@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "udMRjLJnZLdYlJ+4dnAVfjwpiQIZ4eAiHbmROO49nMJbl8PlvBUocJxRa9QKSLp2aYUnefP07tmZm2RjjIqPcQ==",
+  "dgSpecHash": "kMyKIY3cn1eBPoDqJwJT50NIq558ZgGfZlC2QoV70H4GZ8iyAvAjj31n6MwQgANs9fnWUEWd1WhmfiSXKQDozQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usern\\source\\repos\\BakeInHeaven\\BakeInHeaven.csproj",
+  "projectFilePath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven\\BakeInHeaven.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usern\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\usern\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
