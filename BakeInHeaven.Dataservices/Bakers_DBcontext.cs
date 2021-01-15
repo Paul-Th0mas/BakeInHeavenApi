@@ -15,5 +15,6 @@ namespace Dataservices
         public DbSet<Admins> admins { get; set; }
         public DbSet<delicacys> Delicacys { get; set; }
         public DbSet<delicacy_Schedules> Delicacy_Schedules  { get; set; }
+        public DbSet<Orders> orders { get; set; }
 }
 }

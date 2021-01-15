@@ -36,6 +36,7 @@ namespace BakeInHeaven
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped <IDelicacyRepo,SQLDelicacyRepo> ();
             services.AddScoped <IDelicacy_ScheduleRepo,SQLDelicacy_ScheduleRepo> ();
+            services.AddScoped<IOrdersRepo, SQLOrderRepo>();
 
 
             services.AddControllers();
