@@ -22,6 +22,7 @@ namespace Userservices.Repository
             {
                 throw new ArgumentNullException(nameof(admins));
             }
+            
             _context.admins.Add(admins);
            
         }

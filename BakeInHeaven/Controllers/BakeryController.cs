@@ -63,6 +63,11 @@ namespace BakeInHeaven.Controllers
         public ActionResult<AdminReadDtos> CreateAdmin(AdminCreatDtos admins)
         {
             var adminmodel = _mapper.Map<Admins>(admins);
+          
+            if (_admin.GetAllAdmins().ToList().Any(adm => adm.Name == adminmodel.Name))
+            {
+                return Conflict("Duplicate Admin");
+            }
             _admin.CreateAdmin(adminmodel);
             _admin.SaveChanges();
             return Ok(_mapper.Map<AdminReadDtos>(adminmodel));
@@ -76,6 +81,10 @@ namespace BakeInHeaven.Controllers
             if (AdminModelfromRepo == null)
             {
                 return NotFound();
+            }
+            if (_admin.GetAllAdmins().ToList().Any(adm => adm.Name == AdminModelfromRepo.Name))
+            {
+                return Conflict("Duplicate Admin");
             }
             _mapper.Map(adminCreatDtos, AdminModelfromRepo);
             _admin.UpdateAdmin(AdminModelfromRepo);
@@ -129,6 +138,10 @@ namespace BakeInHeaven.Controllers
         public ActionResult<DelicacyReadDtos> CreateDelicacy(DelicacyWriteDtos delicacy)
         {
             var deli_model = _mapper.Map<delicacys>(delicacy);
+            if (_delicacy.GetAllDelicacy().ToList().Any(del => del.Name == deli_model.Name))
+            {
+                return Conflict("Duplicate Delicacy");
+            }
             _delicacy.CreateDelicacy(deli_model);
             _delicacy.SaveChanages();
             return Ok(_mapper.Map<DelicacyReadDtos>(deli_model));
@@ -141,6 +154,10 @@ namespace BakeInHeaven.Controllers
             if (DeliModelfromRepo == null)
             {
                 return NotFound();
+            }
+            if (_delicacy.GetAllDelicacy().ToList().Any(del => del.Name == DeliModelfromRepo.Name))
+            {
+                return Conflict("Duplicate Delicacy");
             }
             _mapper.Map(delicacyWriteDtos, DeliModelfromRepo);
             _delicacy.UpdateDelicacy(DeliModelfromRepo);
@@ -288,6 +305,7 @@ namespace BakeInHeaven.Controllers
             _order.SaveChanges();
             return Ok(_mapper.Map<OrderReadDtos>(order_model));
         }
+        //PUT:Updating order table
         [HttpPut("api/Bakery/order/{id}")]
         public ActionResult UpdateOrder(int id, OrderCreateDtos order)
         {

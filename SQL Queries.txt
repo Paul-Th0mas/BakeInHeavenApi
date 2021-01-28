@@ -1,29 +1,32 @@
-CREATE TABLE Delicacy (
-  "id" Int GENERATED ALWAYS AS IDENTITY,
-  "Name" VarChar(60) UNIQUE NOT NULL,
-  "Quantity" Int NOT NULL,
-  "Price" float(3) NOT NULL,
-  "Weight" float(3) NOT NULL,
-  "Nutritional_energy" float(3) NOT NULL,
+CREATE TABLE "Delicacy_Schedule" (
+  "Pid" PK,
+  "Date" Datetime,
+  "Delicacy_ID" Int
+);
+
+CREATE TABLE "Admin" (
+  "AdminId" PK,
+  "Name" Char(40),
+  "UserName" Char(50),
+  "Password" Char(20)
+);
+
+CREATE TABLE "Delicacy " (
+  "Pid" PK,
+  "Name" Char(60),
+  "Quantity" Int,
+  "Price" Float,
+  "Wieght" Float,
+  "Nutritional  energy(kcal)" Float,
   "Veg" Boolean,
-  "Special" Boolean,
-  primary key ("id")
+  "Special" Boolean
 );
 
-CREATE TABLE Admin (
-  "id"  Int GENERATED ALWAYS AS IDENTITY,
-  "Name" VarChar(40),
-  "UserName" VarChar(50),
-  "Password" VarChar(20),
-  primary key ("id")
-  
-  
-);
-
-CREATE TABLE Delicacy_Scheduled (
-  "id"  Int GENERATED ALWAYS AS IDENTITY,
-  "delicacy_id" int, 
-  "date" Date,
-  FOREIGN KEY("delicacy_id")
-  REFERENCES Delicacy("id")
+CREATE TABLE "Orders" (
+  "id" PK,
+  "orderid" int,
+  "Delicacy_ID" Int,
+  "Price" Float,
+  "Wieght" Float,
+  "customer" Varchar(200)
 );
