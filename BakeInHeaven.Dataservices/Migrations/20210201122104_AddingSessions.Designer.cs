@@ -3,15 +3,17 @@ using System;
 using Dataservices;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Dataservices.Migrations
 {
     [DbContext(typeof(Bakers_DBcontext))]
-    partial class Bakers_DBcontextModelSnapshot : ModelSnapshot
+    [Migration("20210201122104_AddingSessions")]
+    partial class AddingSessions
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

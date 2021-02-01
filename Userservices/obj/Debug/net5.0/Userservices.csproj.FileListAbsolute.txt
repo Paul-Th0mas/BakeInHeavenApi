@@ -1,0 +1,5 @@
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\bin\Debug\net5.0\Dataservices.dll
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\net5.0\Userservices.csprojAssemblyReference.cache
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\net5.0\Userservices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\net5.0\Userservices.AssemblyInfoInputs.cache
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\net5.0\Userservices.AssemblyInfo.cs
