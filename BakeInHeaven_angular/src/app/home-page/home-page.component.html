@@ -1,0 +1,56 @@
+<div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#slides" data-slide-to="0" class="active"></li>
+      <li data-target="#slides" data-slide-to="1"></li>
+      <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/background.jpg" />
+        <div class="carousel-caption text-center">
+          <h1 class="display-2">BAKE</h1>
+          <h3>We bake the best mouth-drizzling goodies in the world </h3>
+          <a routerLink="/deli-listing">
+          <button type="button" class="btn btn-outline-light btn-lg">
+            Order Now
+          </button>
+          </a>
+          <button type="button" class="btn btn-primary btn-lg" [hidden]=true>
+            Modify delicacy
+          </button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/background2.jpg" />
+        <div class="carousel-caption text-center">
+            <h1 class="display-2">IN</h1>
+            <h3>with love and care we make Your wildest imaginations come to life</h3>
+            <h5>Curious on Where is your product in our kitchen</h5>
+            <a routerLink="/my-order-stat">
+            <button type="button" class="btn btn-outline-light btn-lg">
+              Check Status
+            </button>
+            </a>
+            <button type="button" class="btn btn-primary btn-lg" [hidden]=true>
+              Modify delicacy
+            </button>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/background3.jpg" />
+        <div class="carousel-caption text-center">
+            <h1 class="display-2">Heaven</h1>
+            <h3>Sit back and take a bite so that it may transcend You to paradise
+            </h3>
+            <a routerLink="/order-cart">
+            <button type="button" class="btn btn-outline-light btn-lg">
+              Cart
+            </button>
+            </a>
+            <button type="button" class="btn btn-primary btn-lg" [hidden]=true>
+              Modify delicacy
+            </button>
+          </div>
+      </div>
+    </div>
+  </div>

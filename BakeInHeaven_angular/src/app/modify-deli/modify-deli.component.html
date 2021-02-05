@@ -1,0 +1,97 @@
+<div class="container-fluid padding">
+  <div class="row text-center padding">
+    <div
+      class="col-4 bg-light rounded-sm"
+      *ngFor="let delicacy of spldelicacys"
+    >
+      <div class="shadow card bg-dark text-white">
+        <div class="card-body">
+          <div *ngIf="delicacy.veg; else elseblock">
+            <h2 class="card-header">
+              <span class="d-block badge badge-success padding">Veg</span>
+            </h2>
+          </div>
+          <ng-template #elseblock>
+            <h2 class="card-header">
+              <span class="d-block badge badge-danger padding">Non-Veg</span>
+            </h2>
+          </ng-template>
+          <img
+            class="card-img-top"
+            src="assets/background.jpg"
+            alt="Card image cap"
+          />
+          <h4 class="card-title">{{ delicacy.name }}</h4>
+          <p class="card-text">
+            Price:{{ delicacy.price }} &#8377; Quantity:{{ delicacy.quantity }}
+          </p>
+          <a routerLink="/details-deli/{{ delicacy.id }}"
+            ><button type="button" class="btn btn-outline-success mr-2">
+              Edit
+            </button></a
+          >
+          <a routerLink="#"
+            ><button
+              type="button"
+              class="btn btn-outline-danger"
+              (click)="onClickDelete(delicacy.id)"
+              id="delete"
+            >
+              Delete
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-4 bg-light rounded-sm"
+      *ngFor="let delicacy of nonspldelicacys; let i = index"
+    >
+      <div class="shadow card bg-light text-black">
+        <div class="card-body">
+          <div *ngIf="delicacy.veg; else elseblock">
+            <h2 class="card-header">
+              <span class="d-block badge badge-success padding">Veg</span>
+            </h2>
+          </div>
+          <ng-template #elseblock>
+            <h2 class="card-header">
+              <span class="d-block badge badge-danger padding">Non-Veg</span>
+            </h2>
+          </ng-template>
+          <img
+            class="card-img-top"
+            src="assets/background.jpg"
+            alt="Card image cap"
+          />
+          <h4 class="card-title">{{ delicacy.name }}</h4>
+          <p class="card-text">
+            Price:{{ delicacy.price }} &#8377; Quantity:{{ delicacy.quantity }}
+          </p>
+          <a routerLink="/details-deli/{{ delicacy.id }}"
+            ><button type="button" class="btn btn-outline-success mr-2">
+              Edit
+            </button></a
+          >
+          <a routerLink="#"
+            ><button
+              type="button"
+              class="btn btn-outline-danger"
+              (click)="onClickDelete(delicacy.id)"
+              id="delete"
+            >
+              Delete
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center padding justify-content-around">
+    <div class="col-4 padding">
+      <a routerLink="/new-deli"
+        ><button class="btn btn-lg btn-dark mt-4">Add New Item</button></a
+      >
+    </div>
+  </div>
+</div>

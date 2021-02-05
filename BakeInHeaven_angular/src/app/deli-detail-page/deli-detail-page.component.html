@@ -1,0 +1,139 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-9">
+      <div>
+        <div class="card align-self-center">
+          <img
+            class="card-img-top"
+            src="assets/background.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <div class="container-fluid bg-white">
+              <div class="form-group row ml-5 mr-5">
+                <label for="inputName" class="col-2 col-form-label" id="test"
+                  >Name</label
+                >
+                <div class="col-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="Food Name"
+                    [(ngModel)]="name"
+                  />
+                </div>
+              </div>
+              <div class="form-group row ml-5 mr-5">
+                <label for="inputName" class="col-2 col-form-label" id="test"
+                  >Quantity</label
+                >
+                <div class="col-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="Number of food prepared"
+                    [(ngModel)]="quantity"
+                  />
+                </div>
+              </div>
+              <div class="form-group row ml-5 mr-5">
+                <label for="inputName" class="col-1 col-form-label" id="test"
+                  >weight</label
+                >
+                <div class="col-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="In grams"
+                    [(ngModel)]="weight"
+                  />
+                </div>
+                <label for="inputName" class="col-1 col-form-label" id="test"
+                  >Price</label
+                >
+                <div class="col-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="In Rs:"
+                    [(ngModel)]="price"
+                  />
+                </div>
+              </div>
+              <div class="form-group row ml-5 mr-5">
+                <label for="inputName" class="col-2 col-form-label" id="test"
+                  >Nutritional Energy</label
+                >
+                <div class="col-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder="in kilo joules"
+                    [(ngModel)]="nutri_engy"
+                  />
+                </div>
+              </div>
+              <div class="form-group row ml-5 mr-5">
+                <label for="inputName" class="col-2 col-form-label" id="test"
+                  >veg</label
+                >
+                <div class="col-1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      [checked]="veg"
+                      id="defaultCheck1"
+                      (change)="veg = !veg"
+                    />
+                  </div>
+                </div>
+                <label for="inputName" class="col-2 col-form-label" id="test"
+                  >special</label
+                >
+                <div class="col-1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      [checked]="spl"
+                      id="defaultCheck1"
+                      (change)="spl = !spl"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row ml-5 mr-5">
+                <label for="example-date-input" class="col-2 col-form-label"
+                  >Date</label
+                >
+                <div class="col-2">
+                  <input
+                    class="form-control"
+                    type="text"
+                    value="2011-08-19"
+                    id="example-date-input"
+                    [(ngModel)]="date"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group row ml-5 mr-5">
+                <div class="col-4 padding">
+                  <button class="btn btn-dark mt-2" (click)="onClicksubmit()">
+                    Finish Editing
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,98 @@
+<div class="container-fluid padding">
+  <div class="row text-center padding">
+    <div
+      class="col-4 bg-light rounded-sm"
+      *ngFor="let delicacy of spldelicacys; let i = index"
+    >
+      <div class="shadow card bg-dark text-white">
+        <div class="card-body">
+          <div *ngIf="delicacy.veg; else elseblock">
+            <h2 class="card-header">
+              <span class="d-block badge badge-success padding">Veg</span>
+            </h2>
+          </div>
+          <ng-template #elseblock>
+            <h2 class="card-header">
+              <span class="d-block badge badge-danger padding">Non-Veg</span>
+            </h2>
+          </ng-template>
+          <img
+            class="card-img-top"
+            src="assets/background.jpg"
+            alt="Card image cap"
+          />
+          <h4 class="card-title">{{ delicacy.name }}</h4>
+          <p class="card-text">
+            Price:{{ delicacy.price }} &#8377; Quantity:{{ delicacy.quantity }}
+          </p>
+
+          <div class="input-group padding">
+            <input
+              type="number"
+              class="form-control"
+              placeholder=""
+              aria-label=""
+              aria-describedby="basic-addon1"
+              placeholder="Enter the quantity u want"
+              [(ngModel)]="splQtyItems[i]"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-success" type="button" (click)="onClickAdditems(splQtyItems[i],delicacy.id)">Add Item</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-4 bg-light rounded-sm"
+      *ngFor="let delicacy of nonspldelicacys; let i = index"
+    >
+      <div class="shadow card bg-light text-black">
+        <div class="card-body">
+          <div *ngIf="delicacy.veg; else elseblock">
+            <h2 class="card-header">
+              <span class="d-block badge badge-success padding">Veg</span>
+            </h2>
+          </div>
+          <ng-template #elseblock>
+            <h2 class="card-header">
+              <span class="d-block badge badge-danger padding">Non-Veg</span>
+            </h2>
+          </ng-template>
+          <img
+            class="card-img-top"
+            src="assets/background.jpg"
+            alt="Card image cap"
+          />
+          <h4 class="card-title">{{ delicacy.name }}</h4>
+          <p class="card-text">
+            Price:{{ delicacy.price }} &#8377; Quantity:{{ delicacy.quantity }}
+          </p>
+          <form> 
+          <div class="input-group padding" >
+            <input
+              type="number"
+              class="form-control"
+              aria-label=""
+              
+              name="{{'form'+i}}"
+              aria-describedby="basic-addon1"
+              placeholder="Enter the quantity u want"
+              [(ngModel)]="qtyItems[i]"
+            />
+            <div class="input-group-append">
+              <button
+                class="btn btn-success"
+                type="button"
+                (click)="onClickAdditems(qtyItems[i], delicacy.id)"
+              >
+                Add Items
+              </button>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
