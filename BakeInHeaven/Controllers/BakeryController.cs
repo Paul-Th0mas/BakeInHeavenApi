@@ -82,10 +82,7 @@ namespace BakeInHeaven.Controllers
             {
                 return NotFound();
             }
-            if (_admin.GetAllAdmins().ToList().Any(adm => adm.Name == AdminModelfromRepo.Name))
-            {
-                return Conflict("Duplicate Admin");
-            }
+           
             _mapper.Map(adminCreatDtos, AdminModelfromRepo);
             _admin.UpdateAdmin(AdminModelfromRepo);
             _admin.SaveChanges();
@@ -155,10 +152,7 @@ namespace BakeInHeaven.Controllers
             {
                 return NotFound();
             }
-            if (_delicacy.GetAllDelicacy().ToList().Any(del => del.Name == DeliModelfromRepo.Name))
-            {
-                return Conflict("Duplicate Delicacy");
-            }
+         
             _mapper.Map(delicacyWriteDtos, DeliModelfromRepo);
             _delicacy.UpdateDelicacy(DeliModelfromRepo);
             _delicacy.SaveChanages();
@@ -190,7 +184,6 @@ namespace BakeInHeaven.Controllers
         public ActionResult<IEnumerable<Delicacy_ScheduleReadDtos>> GetAlldelicacy_Schedule()
         {
             var delicacys_schedule = _mapper.Map<IEnumerable<Delicacy_ScheduleReadDtos>>(_delicacy_Schedule.GetAllDelicacy_Scheduleds());
-            // delicacys_schedule.ToList().ForEach(i => i.Delicacy_name= _delicacy.GetDelicacysByID(i.Delicacy_id).Name);
             foreach (var i in delicacys_schedule.ToList())
             {
                 if (_delicacy.GetDelicacysByID(i.Delicacy_id) == null)
@@ -266,19 +259,9 @@ namespace BakeInHeaven.Controllers
         public ActionResult<IEnumerable<OrderReadDtos>> GetAllOrder()
         {
             var order = _mapper.Map<IEnumerable<OrderReadDtos>>(_order.GetAllOrders());
-            // delicacys_schedule.ToList().ForEach(i => i.Delicacy_name= _order.GetDelicacysByID(i.Delicacy_id).Name);
-            foreach (var i in order.ToList())
+   foreach (var i in order.ToList())
             {
-                if (_order.GetOrdersById(i.Delicacyid) == null)
-                {
-                    _order.DeleteOrder(_order.GetOrdersById(i.Delicacyid));
-                    _order.SaveChanges();
-                }
-                else
-                {
-                    i.DelicacyName = _delicacy.GetDelicacysByID(i.Delicacyid).Name;
-
-                }
+                i.DelicacyName = _delicacy.GetDelicacysByID(i.Delicacyid).Name;
             }
             return Ok(order);
 
@@ -288,12 +271,12 @@ namespace BakeInHeaven.Controllers
         [HttpGet("api/Bakery/order/{id}")]
         public ActionResult<Orders> OrderById(int id)
         {
-            var order = _mapper.Map<Delicacy_ScheduleReadDtos>(_order.GetOrdersById(id));
+            var order = _mapper.Map<OrderReadDtos>(_order.GetOrdersById(id));
             if (order == null)
             {
                 return NotFound();
             }
-            order.Delicacy_name = _delicacy.GetDelicacysByID(order.Delicacy_id).Name;
+            order.DelicacyName = _delicacy.GetDelicacysByID(order.Delicacyid).Name;
             return Ok(order);
         }
         //POST:adding an order

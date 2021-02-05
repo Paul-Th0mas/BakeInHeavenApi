@@ -20,5 +20,6 @@ namespace Dataservices.Dtos
         public float nutri_engy { get; set; }
  
         public bool veg { get; set; }
+        public bool spl { get; set; }
     }
 }

@@ -3,3 +3,13 @@ C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\net5.0\Us
 C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\net5.0\Userservices.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\net5.0\Userservices.AssemblyInfoInputs.cache
 C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\net5.0\Userservices.AssemblyInfo.cs
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\bin\Debug\net5.0\Userservices.deps.json
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\bin\Debug\net5.0\Userservices.dll
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\bin\Debug\net5.0\ref\Userservices.dll
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\bin\Debug\net5.0\Userservices.pdb
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\bin\Debug\net5.0\Dataservices.pdb
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\net5.0\Userservices.csproj.CoreCompileInputs.cache
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\net5.0\Userservices.csproj.CopyComplete
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\net5.0\Userservices.dll
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\net5.0\ref\Userservices.dll
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\Userservices\obj\Debug\net5.0\Userservices.pdb

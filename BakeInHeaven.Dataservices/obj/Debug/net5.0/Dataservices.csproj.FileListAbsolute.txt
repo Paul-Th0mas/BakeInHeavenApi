@@ -1,0 +1,15 @@
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\bin\Debug\net5.0\Dataservices.deps.json
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\bin\Debug\net5.0\Dataservices.runtimeconfig.json
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\bin\Debug\net5.0\Dataservices.runtimeconfig.dev.json
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\bin\Debug\net5.0\Dataservices.dll
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\bin\Debug\net5.0\ref\Dataservices.dll
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\bin\Debug\net5.0\Dataservices.pdb
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\obj\Debug\net5.0\Dataservices.csprojAssemblyReference.cache
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\obj\Debug\net5.0\Dataservices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\obj\Debug\net5.0\Dataservices.AssemblyInfoInputs.cache
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\obj\Debug\net5.0\Dataservices.AssemblyInfo.cs
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\obj\Debug\net5.0\Dataservices.csproj.CoreCompileInputs.cache
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\obj\Debug\net5.0\Dataservices.dll
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\obj\Debug\net5.0\ref\Dataservices.dll
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\obj\Debug\net5.0\Dataservices.pdb
+C:\Users\usern\Documents\Bakerygit\BakeInHeaven\BakeInHeaven.Dataservices\obj\Debug\net5.0\Dataservices.genruntimeconfig.cache
