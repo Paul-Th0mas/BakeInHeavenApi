@@ -6,7 +6,7 @@ namespace Dataservices.Dtos
 {
     public class OrderReadDtos
     {
-        
+        public int id { get; set; }
         public int OrderId { get; set; }
         
         public int Delicacyid { get; set; }
