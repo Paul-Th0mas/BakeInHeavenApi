@@ -14,5 +14,11 @@ export class MyOrderStatComponent implements OnInit {
   ngOnInit(): void {
     this.orderListingService.getAllorder().subscribe(orders=>this.order=orders)
   }
+  onClickDelete(orderId:number):void{
+    if(confirm("do You want to delete?")){
+      this.orderListingService.deleteOrderById(orderId).subscribe(()=>location.reload())
+    }
+    
+  }
 
 }

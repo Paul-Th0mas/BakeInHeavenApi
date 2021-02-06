@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { orders } from '../Types/orders';
 import { ordersRead } from '../Types/ordersread';
+
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
@@ -44,5 +45,8 @@ export class OrderListingService {
         { orderId, delicacyid, customer, quantity, price },
         httpOptions
       );
+    }
+    deleteOrderById(id:number):Observable<any>{
+      return this.http.delete(`/api/Bakery/order/${id}`);
     }
 }

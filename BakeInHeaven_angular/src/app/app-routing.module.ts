@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AllCusOrdersComponent } from './all-cus-orders/all-cus-orders.component';
+
 import { DeliDetailPageComponent } from './deli-detail-page/deli-detail-page.component';
 import { DeliListingComponent } from './deli-listing/deli-listing.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/homepage', pathMatch: 'full' },
   { path: 'homepage', component: HomePageComponent },
   { path: 'deli-listing', component: DeliListingComponent },
-  { path: 'all-cus-orders', component: AllCusOrdersComponent },
+
   { path: 'modify-deli', component: ModifyDeliComponent },
   { path: 'my-order-stat', component: MyOrderStatComponent },
   { path: 'order-cart', component: OrderCartComponent },

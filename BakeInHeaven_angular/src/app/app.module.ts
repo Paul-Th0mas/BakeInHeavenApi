@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ModifyDeliComponent } from './modify-deli/modify-deli.component';
 import { DeliListingComponent } from './deli-listing/deli-listing.component';
-import { AllCusOrdersComponent } from './all-cus-orders/all-cus-orders.component';
+
 import { OrderCartComponent } from './order-cart/order-cart.component';
 import { MyOrderStatComponent } from './my-order-stat/my-order-stat.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -24,7 +24,7 @@ import { NewDelicacyPageComponent } from './new-delicacy-page/new-delicacy-page.
 
 
 @NgModule({
-  declarations: [AppComponent, ModifyDeliComponent, DeliListingComponent, AllCusOrdersComponent, OrderCartComponent, MyOrderStatComponent, HomePageComponent, DeliDetailPageComponent, NewDelicacyPageComponent],
+  declarations: [AppComponent, ModifyDeliComponent, DeliListingComponent, OrderCartComponent, MyOrderStatComponent, HomePageComponent, DeliDetailPageComponent, NewDelicacyPageComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule,
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
@@ -35,4 +35,8 @@ HttpClientModule,],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  
+
+  
+}

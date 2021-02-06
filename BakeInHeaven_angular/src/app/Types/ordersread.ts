@@ -1,5 +1,5 @@
 export interface ordersRead{
-
+    id:number;
     orderId:number;
     delicacyid:number;
     delicacyName:string;
