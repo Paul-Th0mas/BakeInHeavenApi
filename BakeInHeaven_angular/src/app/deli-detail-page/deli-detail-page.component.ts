@@ -28,6 +28,8 @@ export class DeliDetailPageComponent implements OnInit {
   Id!: number;
   date: string = '';
   dateId!: number;
+  isloading:boolean=false;
+  CreateItem:boolean=false;
   @Output() onSubmit = new EventEmitter<delicacy>();
   constructor(
     private router: Router,
@@ -39,14 +41,7 @@ export class DeliDetailPageComponent implements OnInit {
   ngOnInit(): void {
     this.Id = Number(this.route.snapshot.paramMap.get('id'))!;
     
-    this.deliSchdlService.getDeliSchdl().subscribe((deli_schds) => {
-      deli_schds.forEach((deli_schd) => {
-        if (deli_schd.delicacy_id == this.Id) {
-          this.date = deli_schd.date;
-          this.dateId = deli_schd.id;
-        }
-      });
-    });
+    
     this.deliListingService
       .getDeliById(Number(this.Id))
       .subscribe((delicacy) => {
@@ -57,6 +52,20 @@ export class DeliDetailPageComponent implements OnInit {
         this.nutri_engy = delicacy.nutri_engy;
         this.veg = delicacy.veg;
         this.spl = delicacy.spl;
+      });
+      this.deliSchdlService.getDeliSchdl().subscribe((deli_schds) => {
+        console.log(deli_schds);
+        
+        deli_schds.forEach((deli_schd) => {
+          console.log("outside")
+          console.log(deli_schd.delicacy_id)
+          if (deli_schd.delicacy_id === Number(this.Id)) {
+            console.log(deli_schd.delicacy_id);
+            
+            this.date = deli_schd.date;
+            this.dateId = deli_schd.id;
+          }
+        });
       });
   }
   onClicksubmit() {

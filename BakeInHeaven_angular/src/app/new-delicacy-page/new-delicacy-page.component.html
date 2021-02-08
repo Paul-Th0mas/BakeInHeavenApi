@@ -17,7 +17,7 @@
     >
     <div class="col-4">
       <input
-        type="text"
+        type="number"
         class="form-control"
         id="inputName"
         placeholder="Number of food prepared"
@@ -29,7 +29,7 @@
     <label for="inputName" class="col-1 col-form-label" id="test">weight</label>
     <div class="col-1">
       <input
-        type="text"
+        type="number"
         class="form-control"
         id="inputName"
         placeholder="In grams"
@@ -39,7 +39,7 @@
     <label for="inputName" class="col-1 col-form-label" id="test">Price</label>
     <div class="col-1">
       <input
-        type="text"
+        type="number"
         class="form-control"
         id="inputName"
         placeholder="In Rs:"
@@ -53,7 +53,7 @@
     >
     <div class="col-4">
       <input
-        type="text"
+        type="number"
         class="form-control"
         id="inputName"
         placeholder="in kilo joules"
@@ -89,6 +89,7 @@
       </div>
     </div>
   </div>
+  <div *ngIf="createDate">
   <div class="form-group row ml-5 mr-5">
     <label for="example-date-input" class="col-2 col-form-label"
       >Date</label
@@ -103,16 +104,18 @@
       />
     </div>
   </div>
+</div>
   <div class="form-group row ml-5 mr-5">
     <div class="col-4 padding">
       
         <button class="btn btn-dark mt-2" (click)="onClickCreate()">Create new</button>
     </div>
   
-  
+  <div *ngIf="createDate">
     <div class="col-4 padding">
       
         <button class="btn btn-dark mt-2" (click)="onClickDate()">Set Date</button>
+      </div>
     </div>
   </div>
 </div>

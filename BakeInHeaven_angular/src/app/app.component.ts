@@ -1,4 +1,10 @@
 import { Component } from '@angular/core';
+import { HttpClient,HttpHeaders } from "@angular/common/http";
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json',
+  }),
+};
 
 
 @Component({
@@ -7,8 +13,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  /**
+   *
+   */
+  constructor(private http:HttpClient) {
+        
+  }
   title = 'BakeInHeaven';
   login:boolean=false;
-
+  
   
 }

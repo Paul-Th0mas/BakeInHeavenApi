@@ -15,6 +15,8 @@ export class DeliListingComponent implements OnInit {
   spldelicacys: delicacy[] = [];
   splQtyItems: number[] = [];
   qtyItems: number[] = [];
+  Upcoming:delicacy[]=[];
+  isloading:boolean=false;
   constructor(
     private delilistinservice: DeliListingService,
     private delischdlservice: DeliSchdlService,
@@ -28,6 +30,7 @@ export class DeliListingComponent implements OnInit {
     this.delilistinservice.getDelilistings().subscribe((delicacys) => {
       this.nonspldelicacys = delicacys.filter((delicacy) => !delicacy.spl);
       this.spldelicacys = delicacys.filter((delicacy) => delicacy.spl);
+      this.Upcoming=delicacys;
       this.delischdlservice.getDeliSchdl().subscribe((deli_scheduleList) => {
         deli_scheduleList.forEach((deli_schedule) => {
           if (deli_schedule.date != todaysdate) {
@@ -38,10 +41,18 @@ export class DeliListingComponent implements OnInit {
             this.nonspldelicacys = this.nonspldelicacys.filter(
               (nondelicacy) => nondelicacy.id !== deli_schedule.delicacy_id
             );
+           
+          }
+          if(deli_schedule.date<=todaysdate){
+            console.log("inside:");
+            
+            console.log(deli_schedule.delicacy_name);
+            
+            this.Upcoming=this.Upcoming.filter((upcoming)=>upcoming.id!=deli_schedule.delicacy_id)
           }
         });
       });
-    });
+      this.isloading=!this.isloading});
   }
   onClickAdditems(qty: number, id: number): void {
     // alert(`qty:${qty}  id:${id}`)
@@ -80,4 +91,5 @@ export class DeliListingComponent implements OnInit {
       }
     });
   }
+  
 }

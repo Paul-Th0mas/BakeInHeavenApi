@@ -16,6 +16,7 @@ import { CommonModule } from '@angular/common';
 import { DeliDetailPageComponent } from './deli-detail-page/deli-detail-page.component';  
 import {HttpClientModule} from '@angular/common/http';
 import { NewDelicacyPageComponent } from './new-delicacy-page/new-delicacy-page.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 
@@ -24,7 +25,7 @@ import { NewDelicacyPageComponent } from './new-delicacy-page/new-delicacy-page.
 
 
 @NgModule({
-  declarations: [AppComponent, ModifyDeliComponent, DeliListingComponent, OrderCartComponent, MyOrderStatComponent, HomePageComponent, DeliDetailPageComponent, NewDelicacyPageComponent],
+  declarations: [AppComponent, ModifyDeliComponent, DeliListingComponent, OrderCartComponent, MyOrderStatComponent, HomePageComponent, DeliDetailPageComponent, NewDelicacyPageComponent, NavBarComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule,
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
