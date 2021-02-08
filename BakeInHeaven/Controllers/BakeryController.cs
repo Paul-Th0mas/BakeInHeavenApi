@@ -72,6 +72,27 @@ namespace BakeInHeaven.Controllers
             _admin.SaveChanges();
             return Ok(_mapper.Map<AdminReadDtos>(adminmodel));
         }
+        [HttpPost("api/Bakery/auth")]
+        public ActionResult<AuthResponse> Auth(AuthRead admin)
+        {
+
+            var adminlist = _admin.GetAllAdmins();
+            var authResp = new AuthResponse();
+            foreach (var i in adminlist.ToList())
+            {
+                if (i.Username == admin.Username)
+                {
+                    if (i.Password==admin.Password)
+                    {
+                        
+                        authResp.response = "Cleared";
+                    }
+                }
+
+            }
+            
+            return Ok(authResp);
+        }
 
         //PUT:Updateing Admin details
         [HttpPut("api/Bakery/admin/{id}")]
