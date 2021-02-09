@@ -1,3 +1,4 @@
+
 <div *ngIf="!isloading; else loadblock">
   <div class="container-fluid text-center justif-content-center mt-5">
     <div class="spinner-grow text-success" role="status">
@@ -8,13 +9,13 @@
 <!-- loadblock -->
 <ng-template #loadblock>
   <div class="container-fluid padding">
-    <div class="row text-center padding">
+    <div class="row text-center padding mr-5 ml-5">
       <div
-        class="col-4 bg-light rounded-sm"
+        class=" col-4 bg-white rounded-sm" 
         *ngFor="let delicacy of spldelicacys; let i = index"
       >
-        <div class="shadow card bg-dark text-white">
-          <div class="card-body">
+        <div class="card-min shadow card bg-dark text-white ">
+          <div class=" card-body">
             <!-- ElseBlock -->
             <div *ngIf="delicacy.veg; else elseblock">
               <h2 class="card-header">
@@ -47,8 +48,8 @@
             <p class="card-text">
               Price:&#8377;{{ delicacy.price }} Quantity:{{ delicacy.quantity }}
             </p>
-
-            <div class="input-group padding">
+            <div *ngIf="delicacy.aval;else Noavail">
+            <div class="input-group padding ">
               <input
                 type="number"
                 class="form-control"
@@ -58,6 +59,7 @@
                 placeholder="Enter the quantity u want"
                 [(ngModel)]="splQtyItems[i]"
               />
+          
               <div class="input-group-append">
                 <button
                   class="btn btn-success"
@@ -67,7 +69,13 @@
                   Add Item
                 </button>
               </div>
+              </div>
             </div>
+            <ng-template #Noavail>
+              <div class="alert alert-danger" role="alert">
+                <strong>Sold out!</strong> Dont Worry More on the way!!! 
+            </div>
+            </ng-template>
           </div>
         </div>
       </div>
@@ -76,10 +84,10 @@
 
 
       <div
-        class="col-4 bg-light rounded-sm"
+        class=" col-4 bg-white rounded-sm"
         *ngFor="let delicacy of nonspldelicacys; let i = index"
       >
-        <div class="shadow card bg-light text-black">
+        <div class="card-min shadow card bg-light text-black">
           <div class="card-body">
             <div *ngIf="delicacy.veg; else elseblock">
               <h2 class="card-header">
@@ -112,28 +120,34 @@
             <p class="card-text">
               Price:&#8377;{{ delicacy.price }} Quantity:{{ delicacy.quantity }}
             </p>
-            <form>
+            <div *ngIf="delicacy.aval;else Noavail">
               <div class="input-group padding">
                 <input
                   type="number"
                   class="form-control"
+                  placeholder=""
                   aria-label=""
-                  name="{{ 'form' + i }}"
                   aria-describedby="basic-addon1"
                   placeholder="Enter the quantity u want"
-                  [(ngModel)]="qtyItems[i]"
+                  [(ngModel)]="splQtyItems[i]"
                 />
+            
                 <div class="input-group-append">
                   <button
                     class="btn btn-success"
                     type="button"
-                    (click)="onClickAdditems(qtyItems[i], delicacy.id)"
+                    (click)="onClickAdditems(splQtyItems[i], delicacy.id)"
                   >
-                    Add Items
+                    Add Item
                   </button>
                 </div>
+                </div>
               </div>
-            </form>
+              <ng-template #Noavail>
+                <div class="alert alert-danger" role="alert">
+                  <strong>Sold out!</strong> Dont Worry More on the way!!! 
+              </div>
+              </ng-template>
           </div>
         </div>
       </div>
@@ -142,10 +156,10 @@
 
 
       <div
-        class="col-4 bg-light rounded-sm"
+        class="col-4 bg-white rounded-sm"
         *ngFor="let delicacy of Upcoming; let i = index"
       >
-        <div class="shadow card bg-light text-black">
+        <div class=" card-min shadow card bg-light text-black">
           <div class="card-body">
             <div *ngIf="delicacy.veg; else elseblock">
               <h2 class="card-header">

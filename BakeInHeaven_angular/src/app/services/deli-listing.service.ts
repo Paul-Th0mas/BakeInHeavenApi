@@ -27,11 +27,13 @@ export class DeliListingService {
     weight: number,
     nutri_engy: number,
     veg: boolean,
-    spl: boolean
+    spl: boolean,
+    aval: boolean,
+    archive: boolean
   ): Observable<delicacywrite> {
     return this.http.post<delicacywrite>(
       'api/Bakery/delicacy',
-      { name, quantity, price, weight, nutri_engy, veg, spl },
+      { name, quantity, price, weight, nutri_engy, veg, spl, aval, archive },
       httpOptions
     );
   }
@@ -46,11 +48,13 @@ export class DeliListingService {
     weight: number,
     nutri_engy: number,
     veg: boolean,
-    spl: boolean
+    spl: boolean,
+    aval: boolean,
+    archive: boolean
   ): Observable<delicacywrite> {
     return this.http.put<delicacywrite>(
       `/api/Bakery/delicacy/${id}`,
-      { name, quantity, price, weight, nutri_engy, veg, spl },
+      { name, quantity, price, weight, nutri_engy, veg, spl, aval, archive },
       httpOptions
     );
   }

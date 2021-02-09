@@ -7,4 +7,6 @@ export interface delicacy{
     nutri_engy:number;
     veg:boolean;
     spl:boolean;
+    aval:boolean;
+    archive:boolean;
 }

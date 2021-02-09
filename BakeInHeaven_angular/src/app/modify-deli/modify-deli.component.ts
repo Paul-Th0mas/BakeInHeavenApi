@@ -20,8 +20,12 @@ export class ModifyDeliComponent implements OnInit {
 
   ngOnInit(): void {
     this.delilistinservice.getDelilistings().subscribe((delicacys) => {
-      this.nonspldelicacys = delicacys.filter((delicacy) => !delicacy.spl);
-      this.spldelicacys = delicacys.filter((delicacy) => delicacy.spl);
+      this.nonspldelicacys = delicacys.filter(
+        (delicacy) => !delicacy.spl && !delicacy.archive
+      );
+      this.spldelicacys = delicacys.filter(
+        (delicacy) => delicacy.spl && !delicacy.archive
+      );
     });
   }
   onClickDelete(deliId: number): void {
@@ -31,14 +35,27 @@ export class ModifyDeliComponent implements OnInit {
         deli_schd.forEach((deli_schd) => {
           if (deli_schd.delicacy_id === deliId) {
             this.deliSchdleService
-            .deleteDeliSchdlById(deli_schd.id)
-            .subscribe()
+              .deleteDeliSchdlById(deli_schd.id)
+              .subscribe();
           }
         });
       });
     }
-    
-        this.delilistinservice.deleteDeliListing(deliId).subscribe(() => {
+    this.delilistinservice.getDeliById(deliId).subscribe((delicacy) => {
+      this.delilistinservice
+        .editDeliById(
+          deliId,
+          delicacy.name,
+          delicacy.quantity,
+          delicacy.price,
+          delicacy.weight,
+          delicacy.nutri_engy,
+          delicacy.veg,
+          delicacy.spl,
+          delicacy.aval,
+          true
+        )
+        .subscribe(() => {
           this.nonspldelicacys = this.nonspldelicacys.filter(
             (deli) => deli.id !== deliId
           );
@@ -47,6 +64,6 @@ export class ModifyDeliComponent implements OnInit {
           );
           console.log(this.deliSchdId);
         });
-      
+    });
   }
 }

@@ -11,6 +11,20 @@
           <div class="card-body">
             <div class="container-fluid bg-white">
               <div class="form-group row ml-5 mr-5">
+                <div class="col-5 custom-control custom-switch">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="customSwitch1"
+                    [checked]="aval"
+                    (change)="aval = !aval"
+                  />
+                  <label class="custom-control-label" for="customSwitch1"
+                    ><strong>Toggle for avaliablitiy</strong></label
+                  >
+                </div>
+              </div>
+              <div class="form-group row ml-5 mr-5">
                 <label for="inputName" class="col-2 col-form-label" id="test"
                   >Name</label
                 >

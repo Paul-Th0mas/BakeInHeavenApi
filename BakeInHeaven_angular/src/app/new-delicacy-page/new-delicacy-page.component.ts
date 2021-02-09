@@ -19,7 +19,7 @@ export class NewDelicacyPageComponent implements OnInit {
   spl: boolean = false;
   date!: string;
   deliSchId!: number;
-  createDate:boolean=false;
+  createDate: boolean = false;
   constructor(
     private delilisting: DeliListingService,
     private router: Router,
@@ -36,10 +36,12 @@ export class NewDelicacyPageComponent implements OnInit {
         this.weight,
         this.nutri_engy,
         this.veg,
-        this.spl
+        this.spl,
+        true,
+        false
       )
-      .subscribe(()=> {
-        this.createDate=true;
+      .subscribe(() => {
+        this.createDate = true;
       });
   }
   onClickDate(): void {

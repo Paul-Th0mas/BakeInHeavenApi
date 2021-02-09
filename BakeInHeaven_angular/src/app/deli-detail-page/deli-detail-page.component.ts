@@ -10,14 +10,14 @@ import { DeliSchdlService } from '../services/deli-schdl.service';
   styleUrls: ['./deli-detail-page.component.css'],
 })
 export class DeliDetailPageComponent implements OnInit {
-  @Input() buttonText: string = '';
-  @Input() currentname!: string;
-  @Input() currentquantity!: number;
-  @Input() currentprice!: number;
-  @Input() currentweight!: number;
-  @Input() currentnutri_engy!: number;
-  @Input() currentveg!: boolean;
-  @Input() currentspl!: boolean;
+  // @Input() buttonText: string = '';
+  // @Input() currentname!: string;
+  // @Input() currentquantity!: number;
+  // @Input() currentprice!: number;
+  // @Input() currentweight!: number;
+  // @Input() currentnutri_engy!: number;
+  // @Input() currentveg!: boolean;
+  // @Input() currentspl!: boolean;
   name: string = '';
   quantity!: number;
   price!: number;
@@ -25,11 +25,12 @@ export class DeliDetailPageComponent implements OnInit {
   nutri_engy!: number;
   veg!: boolean;
   spl!: boolean;
+  aval!: boolean;
   Id!: number;
   date: string = '';
   dateId!: number;
-  isloading:boolean=false;
-  CreateItem:boolean=false;
+  isloading: boolean = false;
+  CreateItem: boolean = false;
   @Output() onSubmit = new EventEmitter<delicacy>();
   constructor(
     private router: Router,
@@ -40,8 +41,7 @@ export class DeliDetailPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.Id = Number(this.route.snapshot.paramMap.get('id'))!;
-    
-    
+
     this.deliListingService
       .getDeliById(Number(this.Id))
       .subscribe((delicacy) => {
@@ -52,21 +52,22 @@ export class DeliDetailPageComponent implements OnInit {
         this.nutri_engy = delicacy.nutri_engy;
         this.veg = delicacy.veg;
         this.spl = delicacy.spl;
+        this.aval = delicacy.aval;
       });
-      this.deliSchdlService.getDeliSchdl().subscribe((deli_schds) => {
-        console.log(deli_schds);
-        
-        deli_schds.forEach((deli_schd) => {
-          console.log("outside")
-          console.log(deli_schd.delicacy_id)
-          if (deli_schd.delicacy_id === Number(this.Id)) {
-            console.log(deli_schd.delicacy_id);
-            
-            this.date = deli_schd.date;
-            this.dateId = deli_schd.id;
-          }
-        });
+    this.deliSchdlService.getDeliSchdl().subscribe((deli_schds) => {
+      console.log(deli_schds);
+
+      deli_schds.forEach((deli_schd) => {
+        console.log('outside');
+        console.log(deli_schd.delicacy_id);
+        if (deli_schd.delicacy_id === Number(this.Id)) {
+          console.log(deli_schd.delicacy_id);
+
+          this.date = deli_schd.date;
+          this.dateId = deli_schd.id;
+        }
       });
+    });
   }
   onClicksubmit() {
     this.deliListingService
@@ -78,12 +79,15 @@ export class DeliDetailPageComponent implements OnInit {
         this.weight,
         this.nutri_engy,
         this.veg,
-        this.spl
-      ) 
-      .subscribe(() => { 
+        this.spl,
+        this.aval,
+        false
+      )
+      .subscribe(() => {
         this.deliSchdlService
           .editDeliSchdlById(this.dateId, this.Id, this.date)
-          .subscribe(() => {console.log(this.Id);
+          .subscribe(() => {
+            console.log(this.Id);
             this.router.navigateByUrl('/modify-deli');
           });
       });

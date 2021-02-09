@@ -90,32 +90,30 @@
     </div>
   </div>
   <div *ngIf="createDate">
-  <div class="form-group row ml-5 mr-5">
-    <label for="example-date-input" class="col-2 col-form-label"
-      >Date</label
-    >
-    <div class="col-2">
-      <input
-        class="form-control"
-        type="text"
-        value="2011-08-19"
-        id="example-date-input"
-        [(ngModel)]="date"
-      />
+    <div class="form-group row ml-5 mr-5">
+      <label for="example-date-input" class="col-2 col-form-label">Date</label>
+      <div class="col-2">
+        <input
+          class="form-control"
+          type="text"
+          value="2011-08-19"
+          id="example-date-input"
+          [(ngModel)]="date"
+        />
+      </div>
     </div>
   </div>
-</div>
   <div class="form-group row ml-5 mr-5">
     <div class="col-4 padding">
-      
-        <button class="btn btn-dark mt-2" (click)="onClickCreate()">Create new</button>
+      <button class="btn btn-dark mt-2" (click)="onClickCreate()">
+        Create new
+      </button>
     </div>
-  
-  <div *ngIf="createDate">
-    <div class="col-4 padding">
-      
-        <button class="btn btn-dark mt-2" (click)="onClickDate()">Set Date</button>
-      </div>
+
+    <div class="col-4 padding" *ngIf="createDate">
+      <button class="btn btn-dark mt-2" (click)="onClickDate()">
+        Set Date
+      </button>
     </div>
   </div>
 </div>

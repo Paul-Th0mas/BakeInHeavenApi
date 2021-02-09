@@ -6,4 +6,6 @@ export interface delicacywrite{
     nutri_engy:number;
     veg:boolean;
     spl:boolean;
+    aval:boolean;
+    archive:boolean;
 }
