@@ -21,5 +21,7 @@ namespace Dataservices.Dtos
  
         public bool veg { get; set; }
         public bool spl { get; set; }
+        public bool aval { get; set; }
+        public bool archive { get; set; }
     }
 }
