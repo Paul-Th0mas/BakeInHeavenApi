@@ -56,8 +56,8 @@ export class DeliListingComponent implements OnInit {
             );
           }
         });
+        this.isloading = !this.isloading;
       });
-      this.isloading = !this.isloading;
     });
   }
   onClickAdditems(qty: number, id: number): void {

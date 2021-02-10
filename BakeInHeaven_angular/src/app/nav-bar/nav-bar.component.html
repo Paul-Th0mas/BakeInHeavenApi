@@ -15,16 +15,17 @@
         <li class="nav-item">
           <a routerLink="/homepage" class="nav-link">Homepage</a>
         </li>
-        <li class="nav-item">
-          <div *ngIf="login">
-            <a routerLink="/modify-deli" class="nav-link">Modify</a>
-          </div>
-        </li>
+
         <li class="nav-item">
           <a routerLink="/deli-listing" class="nav-link">Menu</a>
         </li>
         <li class="nav-item">
           <a routerLink="/my-order-stat" class="nav-link">Order Status</a>
+        </li>
+        <li class="nav-item">
+          <div *ngIf="login">
+            <a routerLink="/modify-deli" class="nav-link">Modify</a>
+          </div>
         </li>
         <li class="nav-item">
           <button
@@ -40,6 +41,7 @@
     </div>
   </div>
 </nav>
+
 <div
   class="modal fade bg-dark"
   id="exampleModalCentered"
@@ -62,18 +64,28 @@
         </button>
       </div>
       <div class="modal-body">
-          <div class="row">
-              <div class="col-12">
-                <div class="list-group">
-                    <div *ngIf="loginPageStat===2">
-                    <li id ="fail" class="list-group-item list-group-item-action list-group-item-danger ">Username or Password is incorrect</li>
-                </div>
-                <div *ngIf="loginPageStat===1">
-                    <li id="success" class="list-group-item list-group-item-action list-group-item-success">Logged in SuccessFully</li>
-                </div>  
-                </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="list-group">
+              <div *ngIf="loginPageStat === 2">
+                <li
+                  id="fail"
+                  class="list-group-item list-group-item-action list-group-item-danger"
+                >
+                  Username or Password is incorrect
+                </li>
               </div>
+              <div *ngIf="loginPageStat === 1">
+                <li
+                  id="success"
+                  class="list-group-item list-group-item-action list-group-item-success"
+                >
+                  Logged in SuccessFully
+                </li>
+              </div>
+            </div>
           </div>
+        </div>
         <div class="form-group row ml-5 mr-5 mt-3">
           <label for="inputName" class="col-3 col-form-label" id="test"
             >Username</label
@@ -104,7 +116,12 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="loginPageStat=0">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal"
+          (click)="loginPageStat = 0"
+        >
           Close
         </button>
         <button type="button" class="btn btn-primary" (click)="Login()">
