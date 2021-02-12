@@ -13,18 +13,18 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a routerLink="/homepage" class="nav-link">Homepage</a>
+          <a routerLink="/homepage" routerLinkActive="active" class="nav-link">Homepage</a>
         </li>
 
         <li class="nav-item">
-          <a routerLink="/deli-listing" class="nav-link">Menu</a>
+          <a routerLink="/deli-listing" routerLinkActive="active" class="nav-link">Menu</a>
         </li>
         <li class="nav-item">
-          <a routerLink="/my-order-stat" class="nav-link">Order Status</a>
+          <a routerLink="/my-order-stat" routerLinkActive="active" class="nav-link">Order Status</a>
         </li>
         <li class="nav-item">
           <div *ngIf="login">
-            <a routerLink="/modify-deli" class="nav-link">Modify</a>
+            <a routerLink="/modify-deli"  routerLinkActive="active" class="nav-link">Modify</a>
           </div>
         </li>
         <li class="nav-item">

@@ -7,3 +7,8 @@
   .nav-link {
     font-size: 1.1em !important;
   }
+  .active{
+    color: Black  !important;
+    font-weight: 600;
+    
+  }

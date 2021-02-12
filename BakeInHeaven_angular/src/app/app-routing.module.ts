@@ -13,7 +13,6 @@ const routes: Routes = [
   { path: '', redirectTo: '/homepage', pathMatch: 'full' },
   { path: 'homepage', component: HomePageComponent },
   { path: 'deli-listing', component: DeliListingComponent },
-
   { path: 'modify-deli', component: ModifyDeliComponent },
   { path: 'my-order-stat', component: MyOrderStatComponent },
   { path: 'order-cart', component: OrderCartComponent },

@@ -1,5 +1,5 @@
-<div class="container-fluid ">
-  <table class="table table-hover  ">
+<div class="container-fluid order-body ">
+  <table class="table table-hover bg-white  ">
     <thead class="thead-dark">
       <tr>
         <th>#</th>
@@ -9,11 +9,11 @@
         <th>Quantity</th>
         <th>Total price</th>
         <th></th>
-        <th></th>
+        
       </tr>
     </thead>
     <tbody *ngFor="let orders of order ; let i = index">
-        <tr>
+        <tr >
             <th scope="row">
                 {{i+1}}
             </th>
@@ -24,7 +24,7 @@
             <td>{{orders.price}}</td>
             <td><button class="btn btn-outline-dark" (click)="onClickDelete(orders.id)"><i class="fa fa-trash" aria-hidden="true" ></i></button>
             </td>
-            <td></td>
+           
         </tr>
   
     </tbody>

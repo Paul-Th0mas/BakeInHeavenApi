@@ -24,6 +24,7 @@ Login():void{
     {
       this.login=!this.login;
       this.loginPageStat=1; 
+
     }
     else{
       this.loginPageStat=2;

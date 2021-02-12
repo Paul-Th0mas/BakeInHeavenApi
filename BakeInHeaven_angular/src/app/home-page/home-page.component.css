@@ -35,7 +35,7 @@
     height: 100%;
   }
    #fixed {
-    background-image: url("src\assets\bakery.jpg  ");
+    background-image: url("src\assets\bakery.jpg");
     position: fixed;
     display: block;
     top: 0;
@@ -148,3 +148,12 @@
     margin: auto;
     
   }
+  .custom{
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px 15px #000;
+    padding-top: 1rem;
+  }
+.three-story{
+  background-image:url(src\assets\test.jpg) ;
+}
