@@ -16,6 +16,8 @@ using Microsoft.EntityFrameworkCore;
 using Userservices;
 using Userservices.Repository;
 using AutoMapper;
+using Microsoft.IdentityModel.Tokens;
+using BakeInHeaven.Controllers;
 
 namespace BakeInHeaven
 {
@@ -37,7 +39,22 @@ namespace BakeInHeaven
             services.AddScoped <IDelicacyRepo,SQLDelicacyRepo> ();
             services.AddScoped <IDelicacy_ScheduleRepo,SQLDelicacy_ScheduleRepo> ();
             services.AddScoped<IOrdersRepo, SQLOrderRepo>();
-
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = "JwtBearer";
+                options.DefaultChallengeScheme = "JwtBearer";
+            }).AddJwtBearer("JwtBearer",jwtOptions=>
+            {
+                jwtOptions.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    IssuerSigningKey = loginauth.SIGNING_KEY,
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                    ValidateIssuerSigningKey = true,
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.FromMinutes(5)
+                };
+            });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -55,13 +72,13 @@ namespace BakeInHeaven
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BakeInHeaven v1"));
             }
-
+           
             app.UseHttpsRedirection();
 
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseAuthentication();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
