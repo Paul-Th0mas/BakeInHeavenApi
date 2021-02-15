@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven\\BakeInHeaven.csproj": {}
+    "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven\\BakeInHeaven.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
+    "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj",
+        "projectUniqueName": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven.Dataservices\\Dataservices.csproj",
         "projectName": "Dataservices",
-        "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj",
-        "packagesPath": "C:\\Users\\usern\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\obj\\",
+        "projectPath": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven.Dataservices\\Dataservices.csproj",
+        "packagesPath": "C:\\Users\\paul.thomas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven.Dataservices\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\usern\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\paul.thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,21 +93,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven\\BakeInHeaven.csproj": {
+    "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven\\BakeInHeaven.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven\\BakeInHeaven.csproj",
+        "projectUniqueName": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven\\BakeInHeaven.csproj",
         "projectName": "BakeInHeaven",
-        "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven\\BakeInHeaven.csproj",
-        "packagesPath": "C:\\Users\\usern\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven\\obj\\",
+        "projectPath": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven\\BakeInHeaven.csproj",
+        "packagesPath": "C:\\Users\\paul.thomas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\usern\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\paul.thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,11 +121,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
-                "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj"
+              "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
+                "projectPath": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven.Dataservices\\Dataservices.csproj"
               },
-              "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\Userservices\\Userservices.csproj": {
-                "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\Userservices\\Userservices.csproj"
+              "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\Userservices\\Userservices.csproj": {
+                "projectPath": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\Userservices\\Userservices.csproj"
               }
             }
           }
@@ -213,21 +213,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\Userservices\\Userservices.csproj": {
+    "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\Userservices\\Userservices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\Userservices\\Userservices.csproj",
+        "projectUniqueName": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\Userservices\\Userservices.csproj",
         "projectName": "Userservices",
-        "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\Userservices\\Userservices.csproj",
-        "packagesPath": "C:\\Users\\usern\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\Userservices\\obj\\",
+        "projectPath": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\Userservices\\Userservices.csproj",
+        "packagesPath": "C:\\Users\\paul.thomas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\Userservices\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\usern\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\paul.thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -241,8 +241,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
-                "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj"
+              "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
+                "projectPath": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven.Dataservices\\Dataservices.csproj"
               }
             }
           }
@@ -288,7 +288,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

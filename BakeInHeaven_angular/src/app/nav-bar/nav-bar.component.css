@@ -1,4 +1,21 @@
 .navbar {
+  padding: 0.8rem;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.active {
+  color: black !important;
+  font-weight: 600;
+}
+
+/* .navbar {
     padding: 0.8rem;
   }
   .navbar-nav li {
@@ -11,4 +28,5 @@
     color: Black  !important;
     font-weight: 600;
     
-  }
+  } */
+/*# sourceMappingURL=nav-bar.component.css.map */

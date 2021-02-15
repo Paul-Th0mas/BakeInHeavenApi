@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj": {}
+    "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven.Dataservices\\Dataservices.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
+    "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven.Dataservices\\Dataservices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj",
+        "projectUniqueName": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven.Dataservices\\Dataservices.csproj",
         "projectName": "Dataservices",
-        "projectPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\Dataservices.csproj",
-        "packagesPath": "C:\\Users\\usern\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usern\\Documents\\Bakerygit\\BakeInHeaven\\BakeInHeaven.Dataservices\\obj\\",
+        "projectPath": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven.Dataservices\\Dataservices.csproj",
+        "packagesPath": "C:\\Users\\paul.thomas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\paul.thomas\\Documents\\GitHub\\BakeInHeavenApi\\BakeInHeaven.Dataservices\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\usern\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\paul.thomas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
