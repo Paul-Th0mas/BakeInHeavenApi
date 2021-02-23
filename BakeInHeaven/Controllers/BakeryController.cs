@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Userservices.Repository;
 using Dataservices.Dtos;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BakeInHeaven.Controllers
 {
@@ -41,12 +42,15 @@ namespace BakeInHeaven.Controllers
         [Route("api/Bakery/admin")]
         //GET: All Admin
         [HttpGet]
+        [Authorize]
+
         public ActionResult<IEnumerable<AdminReadDtos>> GetAllAdmin()
         {
             var admins = _admin.GetAllAdmins();
             return Ok(_mapper.Map<IEnumerable<AdminReadDtos>>(admins));
         }
         //GET:Admin by ID
+        
         [HttpGet("api/Bakery/admin/{id}")]
         public ActionResult<AdminReadDtos> GetAdminById(int id)
         {
